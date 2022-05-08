@@ -1,0 +1,15 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "files.associations": {
+        "*.scss": "tailwindcss",
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": true,
+        "other": "on",
+        "comments": "off",
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "jsx"
+    }
+}
