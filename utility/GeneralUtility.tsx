@@ -5,17 +5,6 @@ export const updateObject = ( oldObject: any, updatedProperties: any ) => {
     };
 };
 
-export const saveScrollPos = (url: string) => {
-    clearScrollPos(url)
-    const scrollPos = { x: window.scrollX, y: window.scrollY };
-    sessionStorage.setItem(url, JSON.stringify(scrollPos));
-    console.log(sessionStorage.getItem(url))
-}
-
-export const clearScrollPos = (url: string) => {
-    sessionStorage.removeItem(url)
-}
-
 export const createCarousel = (products) => {
 
     let n = 5
@@ -31,5 +20,17 @@ export const createCarousel = (products) => {
     }
 
     return product_carousel
+}
+
+// Funzioni per salvare la posizione - Non utilizzate
+export const saveScrollPos = (url: string) => {
+    clearScrollPos(url)
+    const scrollPos = { x: window.scrollX, y: window.scrollY };
+    sessionStorage.setItem(url, JSON.stringify(scrollPos));
+    console.log(sessionStorage.getItem(url))
+}
+
+export const clearScrollPos = (url: string) => {
+    sessionStorage.removeItem(url)
 }
  

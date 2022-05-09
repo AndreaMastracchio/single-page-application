@@ -39,7 +39,6 @@ const Listing: React.FC<any> = (props: any) => {
                     <div className='flex space-x-1'>
                         <StarReview index={5} />
                     </div>
-                    {product.body_html}
                     <p className='text-lg'>Prodotto da - {product.vendor}</p>
                     <div className='flex gap-4'>
                         {
