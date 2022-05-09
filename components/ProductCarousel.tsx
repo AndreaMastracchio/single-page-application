@@ -1,5 +1,5 @@
 /* Dep */
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 /* Style/Icon */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"

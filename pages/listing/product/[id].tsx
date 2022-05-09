@@ -37,22 +37,19 @@ const Listing: React.FC<any> = (props: any) => {
                 <div className='flex flex-col gap-4 md:justify-center'>
                     <h1 className='text-2xl font-semibold'>{product.title}</h1>
                     <div className='flex space-x-1'>
-                        <StarReview index={Math.floor(Math.random() * 5)} />
-                        <p className='pl-4'> Leggi la recensioni </p>
+                        <StarReview index={5} />
                     </div>
-                    <p className='text-lg'>{ReactHtmlParser(product.body_html)}</p>
+                    {product.body_html}
                     <p className='text-lg'>Prodotto da - {product.vendor}</p>
                     <div className='flex gap-4'>
                         {
                             product_tag.map((value, index) => {
                                 return (
                                     <div key={index} className='bg-slate-500 px-6 py-2 rounded-md flex space-x-4'>
-                                        <div className=''>
-                                            <FontAwesomeIcon
-                                                icon={faTag}
-                                                style={{ fontSize: 26, color: "white" }}
-                                            />
-                                        </div>
+                                        <FontAwesomeIcon
+                                            icon={faTag}
+                                            style={{ fontSize: 26, color: "white" }}
+                                        />
                                         <p className='text-white italic'>
                                             {value}
                                         </p>

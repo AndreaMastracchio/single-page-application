@@ -36,8 +36,8 @@ const Review: React.FC<any> = () => {
         <>
             <h3 className="text-center text-gray-900 text-xl uppercase py-2">  
                 Recensioni dei nostri clienti 
-                </h3>
-                <div className="embla gap-6 space-x-4">
+            </h3>
+            <div className="embla gap-6 space-x-4">
                 <div className="embla__viewport" ref={viewportRef}>
                     <div className="embla__container">
                     {

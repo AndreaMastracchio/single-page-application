@@ -38,16 +38,12 @@ const Listing: React.FC<any> = (props: any) => {
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
-        console.log(`Loading items from ${itemOffset} to ${endOffset}`);
         setCurrentItems(products.slice(itemOffset, endOffset));
         setPageCount(Math.ceil(products.length / itemsPerPage));
       }, [itemOffset, itemsPerPage]);
 
     const pagginationHandler = (event) => {
         const newOffset = (event.selected * itemsPerPage) % products.length;
-        console.log(
-        `User requested page number ${event.selected}, which is offset ${newOffset}`
-        );
         setItemOffset(newOffset);
         window.scrollTo(0, 0)
     };
