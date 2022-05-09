@@ -34,8 +34,8 @@ const Image = (props) => {
 };
 
 const isMobileConnection = () => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-nocheck
+
+  // @ts-ignore 
   const connection: Navigator = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
   return (
     connection?.type === 'cellular' ||
